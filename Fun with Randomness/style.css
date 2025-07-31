@@ -1,0 +1,149 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  animation: fadeIn 0.8s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background: linear-gradient(to right, #e3f2fd, #ffebee);
+  color: #222;
+  transition: all 0.4s ease;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Features Grid */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* Cards */
+.card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.card p {
+  margin-bottom: 15px;
+  min-height: 40px;
+}
+
+/* Buttons */
+button {
+  background: #0077cc;
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 5px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #005fa3;
+  transform: scale(1.05);
+}
+
+/* Inputs */
+input[type="text"] {
+  padding: 10px;
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #333;
+  color: white;
+  border-radius: 50%;
+  padding: 12px 14px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 999;
+  transition: background 0.3s;
+}
+
+.theme-toggle:hover {
+  background: #000;
+}
+
+/* Dark Mode */
+body.dark {
+  background: #121212;
+  color: #f0f0f0;
+}
+
+body.dark .card {
+  background: rgba(30, 30, 30, 0.85);
+}
+
+body.dark h1, body.dark h2, body.dark p {
+  color: #f5f5f5;
+}
+
+body.dark input, body.dark button {
+  color: white;
+}
+
+body.dark footer {
+  color: #aaa;
+}

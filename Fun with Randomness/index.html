@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun with Randomness</title>
+<link rel="icon" href="https://emoji.gg/assets/emoji/9879-partyblob.gif" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+
+  <div class="container">
+    <h1>✨ Fun with Randomness ✨</h1>
+    <p class="tagline">A collection of small tools to boost your mood, productivity, and vibe.</p>
+
+    <div class="features">
+
+      <!-- Quote Generator -->
+      <div class="card">
+        <h2>💬 Random Quote</h2>
+        <p id="quote">Click below to get inspired!</p>
+        <button onclick="generateQuote()">Inspire Me</button>
+      </div>
+
+      <!-- Background Color Changer -->
+      <div class="card">
+        <h2>🎨 Mood Booster</h2>
+        <p>Shift your background to match your vibe.</p>
+        <button onclick="changeBackground()">Change Mood</button>
+      </div>
+
+      <!-- Password Generator -->
+      <div class="card">
+        <h2>🔐 Password Generator</h2>
+        <input type="text" id="passwordOutput" readonly>
+        <button onclick="generatePassword()">Generate</button>
+        <button onclick="copyPassword()">Copy</button>
+      </div>
+
+      <!-- Emoji Generator -->
+      <div class="card">
+        <h2>😄 Emoji Surprise</h2>
+        <p id="emojiBox">Click below for a smile!</p>
+        <button onclick="generateEmoji()">Surprise Me</button>
+      </div>
+
+      <!-- Random Joke -->
+      <div class="card">
+        <h2>🤣 Random Joke</h2>
+        <p id="jokeBox">Click to laugh a bit!</p>
+        <button onclick="tellJoke()">Tell me a joke</button>
+      </div>
+
+      <!-- Gradient Background -->
+      <div class="card">
+        <h2>🌈 Gradient Shifter</h2>
+        <p>Change the site background with one click.</p>
+        <button onclick="changeGradient()">Shift Gradient</button>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>Made by Bhanuu & Team | Frontend Arena 2025 🚀</footer>
+  <script src="script.js"></script>
+</body>
+</html>
